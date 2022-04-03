@@ -1,0 +1,693 @@
+*{
+    padding: 0;
+    margin:0;
+    }
+    .top_header_left{
+        display: block;
+    }
+    .top_header_right{
+        display: blocke;
+    
+    }
+    .top_header_left a:hover{
+        transition: 0.5s all;
+        color: red;
+    }
+    .top_header_right a:hover{
+        transition: 0.5s all;
+        color: red;
+    }
+    .top_full{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px 1px 15px;
+        background: rgba(0, 0, 255, 0.616);
+    }
+    .top_full ul{
+     list-style: none; 
+    }
+    .top_full li {
+        display: inline;
+        margin: 10px 10px;
+        color: white;
+        
+    }
+    .top_full a {
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5;
+        text-decoration: none !important;
+    }
+    .top_full li a :hover {
+      transition: all 0.5s;
+    }
+    .header_container{
+        width: 100%;
+        /* background: rgba(255, 0, 0, 0.527); */
+        display: flex;
+        z-index: 1 !important;
+        justify-content: space-between;
+    }
+    .header_logo{
+    display: block;
+    font-weight: 500;
+    }
+    .header_logo>a:hover{
+        text-decoration: none;
+        font-weight: 500;
+        color: red;
+        transition: .5s all;
+    }
+    .header_activity{
+    margin: 10px 10px;
+    display: block;
+    display: flex;
+    align-items: center;
+    }
+    .header_activity ul {
+        list-style: none;
+        padding: 8px;
+    }
+    .header_activity > #menu_main > li {
+        display: inline-block;
+    }
+    .header_activity a{
+        padding: 10px 10px 5px 10px;
+        text-decoration: none !important;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        color: black;
+    }
+    .input_search{
+      font-size: px;
+      padding: 10px 35px 10px 14px;
+      border-radius: 30px;
+      border: 2px solid #eee; 
+      display: flex;
+      
+    }
+    .header_activity>ul>li>a:hover{
+        transition: 0.5s all;
+    }
+    .input_search input{
+        border: none;
+        width: 100%;
+        height: 25px;
+        position: relative;
+        outline: none;
+    }
+    button.search-btn{
+        border: none;
+        position: absolute;
+        right: 35px;
+        font-size: 15px;
+        background-color: white;
+    }
+    .header_logo{
+        display: flex;
+        margin: 10px 30px;
+        align-items: center;
+    }
+    .header_logo a{
+        text-decoration: none;
+        padding: 6px;
+        font-size: 30px;
+        margin: 0px 5px;
+    }
+    .header_logo img{
+        width: 50px;
+    }
+    #pages_dropdown{
+        position: relative;
+    } 
+    #dropdown_menu{
+        position: absolute;
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.438);
+        display: none;
+        background: white;
+        z-index: 1;
+    }
+    
+    #dropdown_item{
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        padding: 6px;
+        min-width: 100px;
+    }
+    
+    #dropdown_item:hover,
+    .header_activity > #menu_main > li>a:hover{
+     color: red;
+    }
+    #pages_dropdowm:hover #dropdown_menu{
+        display: block !important;
+       }
+    
+    /* Home about */
+    .home_about{
+        background-image: url(./img/about_1.jpg);
+        background-size: cover;
+        min-height: 300px;
+        background-position-y:50% ;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .about_us{
+        position: absolute;
+        bottom: 75px;
+        left: 60px;
+    }
+    .about_us h2{
+        color: #fff;
+        font-weight: 700;
+        font-family:'Montserrat', sans-serif ;
+        line-height: 28px;
+        font-size: 1.27rem;
+    }
+    .about_link a{
+        color: white;
+        transition: 0.5s all;
+    }
+    .about_link>a:hover{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.726);
+    }
+    .about_link{
+        color: #fff;
+    }
+    /* Video>>> */
+    .about_mission{
+        display: flex;
+        margin-left: 45px;
+        margin-right: 80px;
+        padding: 100px 0px 50px 0px;
+    }
+    .mission_video{
+        position: relative;
+    }
+    .mission_video img {
+        width: 100%;
+        border-radius: 4px;
+    }
+    .mission_title{
+        width: 50%;
+        padding: 75px 75px;
+    }
+    .mission_title h2{
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 600;
+        font-family:'Montserrat', sans-serif ;
+    }
+    .mission_title p{
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.4px;
+        color: #707070; ;
+        margin-top: 15px;
+    }
+    .mission_video{
+        width: 50%;
+    }
+    .video_icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* transform: translateX(-50%); */
+        transform: translate(-50%,-50%);
+        z-index: 1;
+    }
+    .video_icon>a>span{
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        text-align: center;
+        border-radius:50%;
+        font-size: 60px;
+        color: white;;
+    }
+    .video_icon>a :hover{
+        font-size: 70px;
+        transition: 0.5s all;
+    }
+    /* counter */
+    .home_status{
+        background-color: white;
+        padding: 80px 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .status_count{
+        display: flex;
+        margin:50px 0px;
+    }
+    .count_box{
+        width: 25%;
+    }
+    .count{
+       font-size: 46px;
+       font-weight: 600;
+       text-align: center !important;
+    }
+    .count_box p{
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .box_courses{
+        border-left: 2px solid rgba(0, 0, 0, 0.192);
+        border-right:2px solid rgba(0, 0, 0, 0.192);
+    }
+    .box_student{
+        border-right:2px solid rgba(0, 0, 0, 0.192);
+    }
+    /* feature_context */
+    .feature_context{
+        width: 100%;
+        display: flex;
+        margin-top: 70px;
+        background: #f8f9ff;
+        padding: 90px 75px;
+    }
+    .feature_text{
+        width: 33.33%;
+        text-align: center;
+        padding: 40px 30px;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #eee;
+        margin: 0px 15px;
+    }
+    .feature_text span{
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color:rgba(0, 119, 255, 0.13);
+        padding-top: 18px;
+    }
+    .feature_info>p{
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 00.4px;
+    }
+    .feature_info>h3>a{
+        font-size: 24px;
+        font-weight: 600;
+        color: #060606;
+        cursor: pointer;
+    }
+    .feature_info>h3{
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .feature_info>h3:hover{
+        text-decoration: none;
+        transition: 0.5s all;
+        color: red;
+    }
+    .icon_1>span{
+        color: #0abf53;
+        background:rgb(10 191 83 / 10%) ;
+    }
+    .icon_2>span{
+        color:#ffc947;
+        background: rgb(255 201 73 / 22%);
+    }
+    .icon_3>span{
+       color: #ff4f81;
+       background:rgb(255 79 129 / 15%) ;
+    }
+    /* about_info */
+    .info_title{
+        padding: 48px 15px;
+    }
+    .feature_title h3:first-child {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        font-family:'Montserrat', sans-serif;
+    }
+    .feature_title h3:nth-child(2) {
+        font-size: 40px;
+        font-weight: 600;
+        color: #ff6e65;
+        margin: 0px 5px;
+        text-align: center;
+        font-family:'Montserrat', sans-serif
+    }
+    .feature_line{
+        margin-top: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) !important;
+    }
+    .feature_line_1{
+        width: 60px;
+        height: 2px;
+        background-color:rgba(0, 0, 0, 0.445);
+    }
+    .feature_line_2{
+        width: 60px;
+        height: 2px;
+        background-color:rgba(0, 0, 0, 0.452);
+        margin: 4px 8px;
+    }
+    /* info_people */
+    .home_instructors{
+        margin-left: 60px;
+        padding: 40px 0px;
+    }
+    .instructors_content{
+        margin: 0px 15px;
+    }
+    .home_contact{
+        display: flex;
+        max-width: 1200px;
+        margin-left: 65px;
+        margin-top: 65px;
+        margin-bottom: 200px;
+    }
+    .contact_content{
+        margin-left: 55px;
+    }
+    .contact_img img{
+        padding: 0px 15px;
+    }
+    .content_title{
+        padding-top: 62px;
+    }
+    .content_title h2 {
+        font-size: 35px;
+        font-weight:600;
+        line-height: 45px;
+    }
+    .content_title p{
+        font-size: 16px;
+        line-height: 28px;
+        margin: 25px 0px;
+    }
+    .content_btn {
+        padding: 14px 30px;
+        font-weight: 600;
+        font-size: 16px;
+        color: white;
+        background-color: rgba(255, 51, 0, 0.616);
+       border-radius: 4px;
+       border: none;
+    }
+    .home_email{
+        display: flex;
+       padding: 50px;
+       max-width: 1000px;
+       border-radius: 10px;
+       box-shadow: 0px -1px 41px 0px rgba(21, 22, 23, 0.171);
+       position: relative;
+       bottom: 0px;
+       left:50%;
+       transform: translateX(-50%);
+       z-index:1;
+    }
+    .email_content{
+        max-width: 50%;
+    }
+    .email_content h2{
+        font-size: 40px;
+       line-height: 40px;
+       font-weight: 500;
+    }
+    .email_content p{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .email_input{
+        width: 100%;
+        display: flex;
+        padding: 0px 65px;
+        margin-top: 20px;
+    }
+    #your_email{
+        background: transparent;
+        padding: 15px 20px;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 8px 0px 0px 8px;
+        height: 55px;
+        border: 1px solid rgba(128, 128, 128, 0.288);
+    }
+    .email_btn{
+        border: none;
+        color: white;
+        padding: 16px 30px ;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 0 8px 8px 0;
+        background: rgba(0, 0, 255, 0.788);
+        display: inline-block;
+        height: 55px;
+    }
+    .instructors_title{
+        margin-top: 150px;
+        margin-bottom: 30px;
+     }
+     
+     .instructors_content{
+         display: inline-block;
+         margin-top: 50px;
+         padding: px 10px;
+         border-radius: 8px;
+         background-color: white;
+         box-shadow: 0 20px 62px rgba(128, 128, 128, 0.295);
+     }
+     .intructors_img{
+         padding: 10px;
+         
+     }
+     .intructors_name{
+         text-align: center;
+     }
+     .intructors_name>h4>a{
+          text-decoration: none;
+          cursor: pointer;
+     }
+     .instructors_content:hover .name{
+         color: red;
+     }
+     .intructors_name>p{
+         font-size: 13px;
+         font-weight: 400;
+     }
+     .intructors_syboml{
+         position: relative;
+     }
+     .syboml{
+         width: 100%;
+         background-color: rgba(128, 128, 128, 0.212);
+         text-align: center;
+         padding: 20px 0px;
+         position: absolute;
+         bottom: 0px;
+         right: 50%;
+         transform: translateX(50%);
+         display: none;
+     }
+     .syboml>a{
+         display: inline-block;
+         text-align: center;
+         margin: 0px 7px;
+     
+     }
+     .syboml>a>i{
+         width: 28px;
+         height: 28px;
+         background: #fff;
+         border-radius: 50%;
+         text-align: center;
+         padding-top: 4px;
+     }
+     .instructors_content:hover .syboml{
+         display: block;
+     }
+     /* about_education */
+     .about_education{
+         display: flex;
+         padding: 80px 85px 40px 80px ;
+     }
+     .education_title{
+         max-width: 50%;
+         padding-right: 30px;
+         padding-top: 45px;
+     }
+     .education_img{
+         max-width: 50%;
+         padding-left: 30px;
+     }
+     .education_title h2{
+         font-size: 45px;
+         line-height: 50px;
+         font-weight: 600;
+         font-family: 'Montserrat', sans-serif;
+     }
+     .education_title p , .title{
+         font-size: 16px;
+         line-height: 28px;
+         letter-spacing: 00.4px;
+         color: #707070;
+         margin: 15px 0px;
+     }
+     .education_title>ul>li{
+         list-style: none;
+     }
+     .education_title>ul>li>i{
+         color: #ff6e65;
+         font-size: inherit;
+     }
+     .education_img>img{
+         border-radius: 8px;
+         width: 100%;
+     }
+     /* footer_main */
+     .home_email{
+        display: flex;
+        padding: 50px;
+        max-width: 1000px;
+        border-radius: 10px;
+        box-shadow: 0px -1px 41px 0px rgba(21, 22, 23, 0.171);
+        position: relative;
+        bottom: -100px;
+        left:50%;
+        transform: translateX(-50%);
+        z-index:10;
+        background-color: white;
+     }
+     .email_content{
+         max-width: 50%;
+     }
+     .email_content h2{
+         font-size: 40px;
+        line-height: 40px;
+        font-weight: 500;
+     }
+     .email_content p{
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 28px;
+     }
+     .email_input{
+         width: 100%;
+         display: flex;
+         padding: 0px 65px;
+         margin-top: 20px;
+     }
+     #your_email{
+         background: transparent;
+         padding: 15px 20px;
+         font-size: 16px;
+         width: 100%;
+         border-radius: 8px 0px 0px 8px;
+         height: 55px;
+         border: 1px solid rgba(128, 128, 128, 0.288);
+     }
+     .email_btn{
+         border: none;
+         color: white;
+         padding: 16px 30px ;
+         font-size: 16px;
+         font-weight: 600;
+         border-radius: 0 8px 8px 0;
+         background: rgba(0, 0, 255, 0.788);
+         display: inline-block;
+         height: 55px;
+     }
+     
+         /* Home_footer */
+     .footer_main{
+     
+     }
+     .home_footer{
+         display: flex;
+         background-color: #060e1f;
+         padding: 165px 80px 80px;
+     
+     }
+     .footer_link h4{
+         color: white;
+         text-transform: uppercase;
+         font-weight: bold;
+         border-bottom: 1px solid rgba(23, 54, 88, 0.4);
+         line-height: 20px;
+         padding-bottom: 15px;
+     }
+     .footer_link>ul>li>a{
+         font-size: 14px;
+         line-height: 24px;
+         color: #cecece;
+         display: block;
+         margin: 0 0 10px 0;
+         text-decoration: none;
+         cursor: pointer;
+     }
+     .footer_link>ul>li>a>i{
+         font-size: 10px;
+         margin: 0px 6px;
+     }
+     .colum_1{
+         width: 22.222%;
+     }
+     .colum_2{
+         width: 22.222%;
+     }
+     .colum_3{
+         width: 22.222%;
+     }
+     .colum_4{
+         border-left:1px solid rgba(255, 255, 255, 0.06) ;
+         width: 33.3333%;
+         margin-left: 20px;
+         padding-left: 35px;
+     }
+     .colum_4 p{
+         font-size: 14px;
+         line-height: 24px;
+         color: #cecece;
+     }
+     .colum_4 ul{
+         list-style: none;
+         display: flex;
+     }
+     .colum_4>ul>li{
+         padding-top: 8px;
+     }
+     .colum_4>ul>li>a{
+         width: 35px;
+         height: 35px;
+         color: #fff;
+         background:rgba(255, 255, 255, 0.06) ;
+         border-radius: 50%;
+         text-align: center;
+         margin: 0px 4px;
+     }
+     .colum_4>ul>li>a>i{
+         font-size: 15px;
+         line-height: 35px;
+     }
+     .home_video {
+         text-align: center;
+     }
+     .home_video video{
+         width: 800px;
+         height: 450px;
+     }
+
+
+    
+    

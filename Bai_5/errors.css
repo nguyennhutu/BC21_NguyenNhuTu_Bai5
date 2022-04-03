@@ -1,0 +1,74 @@
+.errors_main{
+    background-image: url(./img/error_1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    padding: 70px 0px;
+    align-items: center;
+    position: relative;
+    min-width: 500px;
+}
+.errors_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+}
+.errors_text>h2{
+    font-size: 160px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 500;
+}
+.errors_text>p{
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 28px;
+    margin: 25px 0px;
+}
+.errors_search{
+    position: relative;
+    margin-top: 45px;
+}
+.errors_search>input{
+    padding: 10px 58px 10px 20px;
+    font-size: 16px;
+    color: #060606;
+    border-radius: 35px;
+    background: #fff;
+    line-height: 36px;
+    outline: none;
+    min-width:440px;
+}
+.errors_search>button{
+    border: none;
+    color: #ff6e65;
+    line-height: 1;
+    background: none;
+    padding: 18px 18px;
+    font-size: 20px;
+    position: absolute;
+    left: 370px;
+}
+.search_back{
+    background: none;
+    border-radius: 35px;
+    color: #eee;
+    margin-top: 50px;
+    font-weight: 600;
+    align-items: center;
+}
+.search_back>a{
+    color: #eee;
+}
+.search_back>a:hover{
+    color:#ff6e65;
+    text-decoration: none;
+}
+.home_video {
+    text-align: center;
+}
+.home_video video{
+    width: 800px;
+    height: 450px;
+}

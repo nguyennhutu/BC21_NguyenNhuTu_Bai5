@@ -1,0 +1,112 @@
+.single_img img{
+    max-width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+.single_text h3{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.75rem;
+}
+.single_text p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: 0.4px;
+    margin-top: 5px;
+}
+.double_img{
+    display: flex;
+    margin: 20px 0px;
+}
+.double_img img:first-child{
+    width: 100%;
+    border-radius: 4px;
+}
+.double_img img:last-child{
+    border-radius: 4px;
+    margin-left: 20px;
+    width: 100%;
+}
+.single_icon a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+}
+.single_preview{
+    margin: 30px 0px;
+    border-top: 1px solid #eee ;
+    border-bottom: 1px solid #eee ;
+    padding: 20px 0px;
+}
+.single_preview a{
+    color: black;
+    font-weight: 600;
+}
+.single_preview a:hover {
+    text-decoration: none;
+    color:red ;
+    transition: 0.5s all;
+}
+.row {
+    display: flex;
+}
+.name>input{
+    margin-right: 55px;
+    margin-left: 10px;
+}
+.name>input:focus{
+    border: 1px solid #91e6c4;
+    transition: 0.5s all;
+}
+.email>input:focus{
+    border: 1px solid #91e6c4;
+    transition: 0.5s all;
+}
+#row_message:focus{
+    border: 1px solid #91e6c4;
+    transition: 0.5s all;
+}
+.email>input{
+    margin-left: 10px;
+}
+.row input {
+    min-width: 350px;
+    margin-bottom: 20px;
+    color: #060606;
+    font-size: 14px;
+    border: 1px solid #eee;
+    padding: 14px;
+    background: #fff;
+    border-radius: 8px;
+    outline: none;
+    height: auto;
+}
+#row_message{
+    width: 100%;
+    margin: 20px 0px;
+    color: #060606;
+    font-size: 14px;
+    border: 1px solid #eee;
+    padding: 14px;
+    background: #fff;
+    border-radius: 8px;
+    outline: none;
+    height:90px;
+}
+.button_right{
+    text-align: right !important;
+}
+.button_right>button {
+    background: #ff6e65;
+    color: #fff;
+    padding: 14px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none
+}
+.button_right>button:hover{
+    background: #0d369f;
+    transition: 00.5s all;
+}
